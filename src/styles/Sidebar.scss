@@ -1,0 +1,51 @@
+.sidebar {
+  margin: 0;
+  padding: 60px 0;
+  width: 160px;
+
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  background: #FFE4D6;
+  border-radius: 24px 0px 0px 0px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li  {
+      text-align: center;
+      width: 100%;
+
+      a {
+        svg{
+          fill: #E1AA98;
+        }
+
+        display: block;
+        color: #E1AA98;
+        margin: 90px 0;
+        text-decoration: none;
+        border-left: 3px solid #FFE4D6;
+
+        &.active{
+          svg{
+            fill: $active-link-color;
+          }
+          color: $active-link-color;
+          border-left: 3px solid $active-link-color;
+        }
+
+        &:hover:not(.active){
+          svg{
+            fill: $active-link-color;
+          }
+          border-left: 3px solid $active-link-color;
+        }
+
+      }
+    }
+  }
+
+}
